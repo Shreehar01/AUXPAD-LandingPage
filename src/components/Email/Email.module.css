@@ -1,0 +1,44 @@
+.containerGroup{
+    background-color: #FAF9F9;
+}
+
+.innerContainer{
+    padding-left: 20vw;
+    padding-top: 5vw;
+    padding-bottom: 4vw;
+}
+
+.buttonGroup{
+    background-color: #C22929;
+    border:0px;
+    color: #FFFFFF;
+    height: 55px;
+    width: 10vw;
+}
+
+.buttonGroup:hover{
+    background-color: #A52A2A;
+    border:0px;
+    color: #FFFFFF;
+    height: 55px;
+    width: 10vw;
+}
+
+.heading{
+    padding-bottom:1vw;
+}
+
+.para{
+    padding-bottom:2vw;
+}
+
+.textBox{
+    width:22vw;
+}
+
+.outerGroup{
+    position: relative;
+    left:20vw;
+    font-size: 80%;
+    padding-bottom:2vw;
+}

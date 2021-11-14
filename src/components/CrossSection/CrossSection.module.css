@@ -1,0 +1,17 @@
+.imageComponent3{
+    position:relative;
+    padding-left:8vw;
+    top:-100px;
+}
+
+.imageComponent2{
+    position:relative;
+    top:10px;
+    padding-left:1vw;
+}
+
+.imageComponent1{
+    position:relative;
+    padding-top:2vw;
+    left:-3vw;
+}
