@@ -8,8 +8,8 @@ import classes from './Email.module.css';
 const Email = () => {
     return (
         <div>
-            <Container className={classes.containerGroup}>
-                <Container className={classes.innerContainer}>
+            <div className={classes.containerGroup}>
+                <div className={classes.innerContainer}>
                     <Row>
                         <h1 className={classes.heading}>Questions? Concerns? Email us!</h1>
                     </Row>
@@ -30,9 +30,9 @@ const Email = () => {
                         </Col>
                     </Row>
                     <br />
-                </Container>
+                </div>
                 <p className={classes.outerGroup}>© AUXPAD 2021. All Rights Reserved.</p>
-            </Container> 
+            </div> 
         </div>
     );
 }

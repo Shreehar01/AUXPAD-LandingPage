@@ -5,56 +5,34 @@ import {Container, Row, Col} from 'react-bootstrap';
 // <img src={logo} />
 
 const Navbar = () => {
-
   return (
-    <Container>
-            <Row>
-                <br />
-                <Col lg={12}>
-                <div className="gpt3__navbar">
-      <div className="gpt3__navbar-links">
-        <div className="gpt3__navbar-links_logo">
-        </div>
-        <div className="gpt3__navbar-links_container">
-          <p><a href="#home">AUXPAD</a></p>
-          <p><a href="#wgpt3">Features</a></p>
-          <p><a href="#possibility">Pricing</a></p>
-          <p><a href="#features">Testimonials</a></p>
-          <p><a href="#blog">Contact</a></p>
-          <p><a href="#blog">About Us</a></p>
-          
-        </div>
-      </div>
-      <div className="gpt3__navbar-sign">
-        <p>Sign up</p>
-        <button type="button">Sign in</button>
-      </div>
-      <div className="gpt3__navbar-sign">
-        <p>Sign in</p>
-        <button type="button">Sign up</button>
-      </div>
-      <div className="gpt3__navbar-menu">
-        
-        <div className="gpt3__navbar-menu_container scale-up-center">
-          <div className="gpt3__navbar-menu_container-links">
-            <p><a href="#home">Home</a></p>
-            <p><a href="#wgpt3">What is GPT3?</a></p>
-            <p><a href="#possibility">Open AI</a></p>
-            <p><a href="#features">Case Studies</a></p>
-            <p><a href="#blog">Library</a></p>
-          </div>
-          <div className="gpt3__navbar-menu_container-links-sign">
-            <p>Sign in</p>
-            <button type="button">Sign up</button>
-          </div>
-        </div>
-        
+   <div>
+     <div class="nav">
+    <div class="nav-header">
+      <div class="nav-title">
+        AUXPAD
       </div>
     </div>
-                </Col>
-            </Row>
-        </Container> 
-    
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <div class="nav-links">
+      <a href="" target="_blank">Features</a>
+      <a href="" target="_blank">Pricing</a>
+      <a href="" target="_blank">Testimonials</a>
+      <a href="" target="_blank">Contact</a>
+      <a href="" target="_blank">About Us</a>
+    </div>
+    <div class="sign">
+        <a href="">Sign In</a>
+        <button class="sign-up">Sign Up</button>
+    </div>
+  </div>
+   </div>
   );
 };
 
