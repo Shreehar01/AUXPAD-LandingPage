@@ -8,7 +8,7 @@ const CardComponent = ({heading, paragraph}) => {
                 <h6 className={Classes.CardHeading}>{heading}</h6>
                 <p className={Classes.CardParagraph}>{paragraph}</p>
             </div> 
-            <button className={Classes.CardButton}>Try Now</button>
+            <button onClick = {() => {window.location.replace("https://app.auxpad.com/register", { replace: false })}} className={Classes.CardButton}>Try Now</button>
         </div>
     )
 }

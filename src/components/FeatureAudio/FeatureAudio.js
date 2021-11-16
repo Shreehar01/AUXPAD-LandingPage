@@ -32,7 +32,7 @@ const FeatureAudio = () =>{
 
     return (
             <Wrapper>
-                <div className={Classes.TextContainer}>
+                <div id="FeatureAudio" className={Classes.TextContainer}>
                     <h1 className={Classes.Heading}>Catch everything with audio recordings <br /> & live transcript</h1>
                     <p className={Classes.Paragraph}>AUXPAD will keep a complete recording of your live audio with <br /> real-time transcript so you don’t have to wait</p>
                 </div>

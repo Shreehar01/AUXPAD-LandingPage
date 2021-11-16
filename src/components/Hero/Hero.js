@@ -9,7 +9,7 @@ const Hero = () =>{
             <div className={Classes.Text}>
                 <h1 className={Classes.Heading}>Never miss <br /> another <br /> sentence.</h1>
                 <p className={Classes.Paragraph}>AUXPAD combines a beautiful editor with <br /> speech-to-text recognition for a seamless <br /> note-taking experience.</p>
-                <button className={Classes.Button}>Start Now</button>
+                <button onClick = {() => {window.location.replace("https://app.auxpad.com/register", { replace: true })}} className={Classes.Button}>Start Now</button>
             </div>
             <div className = {Classes.Image}><img src={HeroImage} /></div>
         </Wrapper> 

@@ -1,22 +1,25 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar.js';
-import Hero from './components/Hero/Hero.js';
-import FeatureAudio from './components/FeatureAudio/FeatureAudio.js';
-import FeatureClick from './components/FeatureClick/FeatureClick.js';
-import CrossSection from './components/CrossSection/CrossSection.js';
-import Email from './components/Email/Email.js';
-import classes from './App.module.css';
+import Footer from './components/Footer/Footer.js';
+import Landing from './Landing.js';
+import classes from './Landing.module.css';
+import {Navigate, useRoutes} from 'react-router-dom';
 
+
+const AppMid = () => {
+    let routes = useRoutes([
+      { path: "/", element: <Landing /> },
+      { path: "/termsandagreement", element: "" },
+      {path: "/register", element: <Landing />}
+    ]);
+    return routes;
+  };
 const App = () => {
     return( 
     <div className={classes.prim}> 
         <Navbar /> 
-        <Hero />
-        <FeatureAudio />
-        {/* <Hero />
-        <FeatureAudio />
-        <FeatureClick />
-        <CrossSection /> */}
+            <AppMid />
+        <Footer />
     </div>
     );
 };
