@@ -1,0 +1,93 @@
+.TextContainer{
+    position:relative;
+    top:-40px;
+}
+
+.Heading{
+    display:flex;
+    flex-wrap:wrap;
+    font-size:45px;
+}
+
+.Paragraph{
+    display:flex;
+    flex-wrap:wrap;
+    font-size: 20px;
+    color:#757575;
+}
+
+.SwitchContainer{
+    max-height:600px;
+}
+
+.BgImage{
+    position:relative;
+    top:20px;
+    left:100px;
+}
+
+.RectangleBackground{
+    position:absolute;
+    top:930px;
+    left:160px;
+    z-index:-1;
+}
+.TranscriptImage{
+    position:absolute;
+    top:860px;
+    left:250px;
+}
+
+.ButtonClass{
+    position:absolute;
+    top:880px;
+    left:750px;
+}
+
+.ButtonChildren{
+    margin-left:80px;
+    margin-right:80px;
+    position:relative;
+    left:10px;
+    width: 150px;
+    height: 40px;
+    color: #757575;
+    font-size: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 26px;
+    margin: 4px 2px;
+    border:none;
+}
+
+.ButtonSelected{
+    margin-left:80px;
+    margin-right:80px;
+    position:relative;
+    left:10px;
+    width: 150px;
+    height: 40px;
+    color: #404040;
+    font-size: 20px;
+    background-color: #d3d3d3;
+    text-align: center;
+    border-radius: 26px;
+    margin: 4px 2px;
+    border:none;
+}
+
+.ButtonChildren:Hover{
+    margin-left:80px;
+    margin-right:80px;
+    position:relative;
+    left:10px;
+    width: 150px;
+    height: 40px;
+    color: #404040;
+    font-size: 20px;
+    background-color: #a9a9a9;
+    text-align: center;
+    border-radius: 26px;
+    margin: 4px 2px;
+    border:none;
+}

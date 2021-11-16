@@ -1,0 +1,63 @@
+.MainBody{
+    padding-top:60px;
+}
+.Text{
+    position:relative;
+    top:5px;
+    order:1;
+    flex-grow:1;
+    flex-shrink:1;
+    flex-basis: 40%;
+    align-self: center;
+}
+
+.Heading{
+    font-size:60px;
+    position:relative;
+    top:-12px;
+}
+
+.Paragraph{
+    display:flex;
+    flex-wrap:wrap;
+    font-size: 20px;
+    color:#757575;
+}
+
+.Button{
+    position:relative;
+    left:10px;
+    width: 120px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #c22929;
+    text-align: center;
+    border-radius: 26px;
+    margin: 4px 2px;
+    border-color:#c22929;
+}
+
+.Button:hover{
+    width: 120px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #c22929;
+    text-align: center;
+    border-radius: 26px;
+    margin: 4px 2px;
+    border-color:#c22929;
+}
+
+.Image{
+    position:relative;
+    left:-10px;
+    order:2;
+    flex-grow:1;
+    flex-shrink:1;
+    align-self: center;
+}
+
+//transform: scaleX(1.2);
+
+
+

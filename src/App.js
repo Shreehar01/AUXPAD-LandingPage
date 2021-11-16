@@ -11,6 +11,8 @@ const App = () => {
     return( 
     <div className={classes.prim}> 
         <Navbar /> 
+        <Hero />
+        <FeatureAudio />
         {/* <Hero />
         <FeatureAudio />
         <FeatureClick />

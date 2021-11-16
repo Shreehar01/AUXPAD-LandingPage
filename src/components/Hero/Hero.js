@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
-import {Container, Row, Col} from 'react-bootstrap';
-import HeroSection from './Hero Section.svg';
+import Wrapper from '../Wrapper/Wrapper.js';
+import HeroImage from './HeroImage.svg';
+import Classes from './Hero.module.css';
 
 const Hero = () =>{
     return (
-    <div> 
-        <Container>
-            <Row>
-                <br />
-                <Col sm={12}>
-                    <img src ={HeroSection} />
-                </Col>
-            </Row>
-        </Container> 
-    </div>
+        <Wrapper>
+            <div className={Classes.Text}>
+                <h1 className={Classes.Heading}>Never miss <br /> another <br /> sentence.</h1>
+                <p className={Classes.Paragraph}>AUXPAD combines a beautiful editor with <br /> speech-to-text recognition for a seamless <br /> note-taking experience.</p>
+                <button className={Classes.Button}>Start Now</button>
+            </div>
+            <div className = {Classes.Image}><img src={HeroImage} /></div>
+        </Wrapper> 
     );
 }
 

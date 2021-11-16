@@ -1,0 +1,54 @@
+
+.Card{
+    position:absolute;
+    top: 945px;
+    left: 820px;
+    height:300px;
+    width:400px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+}
+
+.SubCard{
+    min-height:120px;
+}
+
+.CardHeading{
+    position:relative;
+    top:40px;
+    font-size: 18px;
+}
+
+.CardParagraph{
+    position:relative;
+    top:60px;
+}
+
+.CardButton{
+    position:relative;
+    top:60px;
+    left:15px;
+    width: 120px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #c22929;
+    text-align: center;
+    border-radius: 26px;
+    margin: 4px 2px;
+    border-color:#c22929;
+}
+
+
+.CardButton:Hover{
+    position:relative;
+    top:60px;
+    left:15px;
+    width: 120px;
+    height: 50px;
+    background-color: #f0f0f0;
+    color: #c22929;
+    text-align: center;
+    border-radius: 26px;
+    margin: 4px 2px;
+    border-color:#c22929;
+}

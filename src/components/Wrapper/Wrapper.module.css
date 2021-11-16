@@ -1,0 +1,10 @@
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 600px;
+    width: 95vw;
+    padding-top:50px;
+    align-items: center;
+    align-content: space-around;
+}
