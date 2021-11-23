@@ -2,12 +2,13 @@ import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import ContactUs from '../FeatureAudio/Email.svg'; 
 import TextField from '@mui/material/TextField';
+import Wrapper2 from '../Wrapper/Wrapper2';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import classes from './Email.module.css';
 
 const Email = () => {
     return (
-        <div>
+        <Wrapper2>
             <div className={classes.containerGroup}>
                 <div className={classes.innerContainer}>
                         <h1 className={classes.heading}>Questions? Concerns? Email us!</h1>
@@ -19,11 +20,11 @@ const Email = () => {
                                 className={classes.textBox}
                             />
                             <button className={classes.buttonGroup}>give us a wave 👋</button>
-                    <br />
+                            <p className={classes.outerGroup}>© AUXPAD 2021. All Rights Reserved.</p>
                 </div>
-                <p className={classes.outerGroup}>© AUXPAD 2021. All Rights Reserved.</p>
+                
             </div> 
-        </div>
+        </Wrapper2>
     );
 }
 

@@ -1,19 +1,25 @@
 .containerGroup{
-    background-color: #FAF9F9;
+    position:relative;
+    width:100%;
 }
 
 .innerContainer{
-    padding-left: 20vw;
-    padding-top: 5vw;
-    padding-bottom: 4vw;
+    min-width:600px;
+    position:relative;
+    background-color: #e5e5e5;
+    padding-bottom: 4vh;
+    padding-top:100px;
+    padding-left:8%;
 }
 
 .buttonGroup{
+    background-color: #e5e5e5;
+    margin-left:15px;
     background-color: #C22929;
     border:0px;
     color: #FFFFFF;
     height: 55px;
-    width: 10vw;
+    width: 18vh;
 }
 
 .buttonGroup:hover{
@@ -21,23 +27,27 @@
     border:0px;
     color: #FFFFFF;
     height: 55px;
-    width: 10vw;
+    width: 18vh;
 }
 
 .heading{
     padding-bottom:1vw;
+    background-color: #e5e5e5;
 }
 
 .para{
     padding-bottom:2vw;
+    background-color: #e5e5e5;
 }
 
 .textBox{
     width:22vw;
+    background-color: #e5e5e5;
 }
 
 .outerGroup{
+    background-color: #e5e5e5;
     position: relative;
     font-size: 80%;
-    padding-bottom:2vw;
+    padding-top:2vw;
 }

@@ -1,6 +1,6 @@
- * {
+ .universal {
     box-sizing: border-box;
-    padding-left: 12px;
+    padding-left: 8%;
   }
   
   body {
@@ -38,7 +38,7 @@
     float: right;
     min-width:20px;
     flex-shrink:0.5;
-    font-size: 18px;
+    font-size: 16px;
   }
   
   .nav > .nav-links > a {

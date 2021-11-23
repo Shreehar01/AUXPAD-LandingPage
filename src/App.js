@@ -14,14 +14,16 @@ const AppMid = () => {
     ]);
     return routes;
   };
+  
 const App = () => {
     return( 
     <div className={classes.prim}> 
         <Navbar /> 
             <AppMid />
-        <Footer />
+        
     </div>
     );
 };
 
 export default App;
+//<Footer />

@@ -1,3 +1,8 @@
+.InternalWrapper{
+    display:inline-block;
+    position:relative;
+}
+
 .TextContainer{
     position:relative;
     top:-40px;
@@ -9,6 +14,10 @@
     font-size:45px;
 }
 
+.HeadingSmall{
+    display:none;
+}
+
 .Paragraph{
     display:flex;
     flex-wrap:wrap;
@@ -16,78 +25,457 @@
     color:#757575;
 }
 
+.ParagraphSmall{
+    display:none;
+}
+
 .SwitchContainer{
     max-height:600px;
+    display:inline-block;
+    position:relative;
+    min-width:400px;
 }
 
 .BgImage{
-    position:relative;
+    position:inherit;
+    width: 120%;
+    max-width:120%;
     top:20px;
-    left:100px;
 }
 
 .RectangleBackground{
     position:absolute;
-    top:930px;
-    left:160px;
+    max-width:120%;
+    width:120%;
+    top:10%;
+    left:0%;
     z-index:-1;
 }
+
 .TranscriptImage{
     position:absolute;
-    top:860px;
-    left:250px;
+    width:42.5%;
+    max-width:42.5%;
+    top:-5%;
+    left:10%;
 }
 
-.ButtonClass{
+
+.ButtonChildren1{
+    margin-left:80%;
+    margin-right:80%;
     position:absolute;
-    top:880px;
-    left:750px;
-}
-
-.ButtonChildren{
-    margin-left:80px;
-    margin-right:80px;
-    position:relative;
-    left:10px;
-    width: 150px;
-    height: 40px;
+    left:68%;
+    top: -5%;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 26px;
+    margin: 4px 2px;
+    border:none;
     color: #757575;
+    background-color: #f8f8f8;
+}
+
+.ButtonChildren2{
+    margin-left:80%;
+    margin-right:80%;
+    position:absolute;
+    left: 84%;
+    top: -5%;
+    width: auto;
+    height: auto;
     font-size: 20px;
-    background-color: #ffffff;
     text-align: center;
     border-radius: 26px;
     margin: 4px 2px;
     border:none;
+    color: #757575;
+    background-color: #f8f8f8;
 }
 
-.ButtonSelected{
-    margin-left:80px;
-    margin-right:80px;
-    position:relative;
-    left:10px;
-    width: 150px;
-    height: 40px;
-    color: #404040;
+.ButtonChildren3{
+    margin-left:80%;
+    margin-right:80%;
+    position:absolute;
+    left: 100%;
+    top: -5%;
+    width: auto;
+    height: auto;
     font-size: 20px;
+    text-align: center;
+    border-radius: 26px;
+    margin: 4px 2px;
+    border:none;
+    color: #757575;
+    background-color: #f8f8f8;
+}
+
+.ButtonSelected1{
+    margin-left:80%;
+    margin-right:80%;
+    position:absolute;
+    left:68%;
+    top: -5%;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 26px;
+    margin: 4px 2px;
+    border:none;
+    color: #404040;
     background-color: #d3d3d3;
-    text-align: center;
-    border-radius: 26px;
-    margin: 4px 2px;
-    border:none;
 }
 
-.ButtonChildren:Hover{
-    margin-left:80px;
-    margin-right:80px;
-    position:relative;
-    left:10px;
-    width: 150px;
-    height: 40px;
-    color: #404040;
+.ButtonSelected2{
+    margin-left:80%;
+    margin-right:80%;
+    position:absolute;
+    left:84%;
+    top: -5%;
+    width: auto;
+    height: auto;
     font-size: 20px;
-    background-color: #a9a9a9;
     text-align: center;
     border-radius: 26px;
     margin: 4px 2px;
     border:none;
+    color: #404040;
+    background-color: #d3d3d3;
+}
+
+.ButtonSelected3{
+    margin-left:80%;
+    margin-right:80%;
+    position:absolute;
+    left:100%;
+    top: -5%;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 26px;
+    margin: 4px 2px;
+    border:none;
+    color: #404040;
+    background-color: #d3d3d3;
+}
+
+.ButtonChildren1:Hover{
+    margin-left:80%;
+    margin-right:80%;
+    position:absolute;
+    left:68%;
+    top: -5%;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 26px;
+    margin: 4px 2px;
+    border:none;
+    color: #404040;
+    background-color: #a9a9a9;
+}
+
+.ButtonChildren2:Hover{
+    margin-left:80%;
+    margin-right:80%;
+    position:absolute;
+    left:84%;
+    top: -5%;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 26px;
+    margin: 4px 2px;
+    border:none;
+    color: #404040;
+    background-color: #a9a9a9;
+}
+
+.ButtonChildren3:Hover{
+    margin-left:80%;
+    margin-right:80%;
+    position:absolute;
+    left:100%;
+    top: -5%;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 26px;
+    margin: 4px 2px;
+    border:none;
+    color: #404040;
+    background-color: #a9a9a9;
+}
+
+.MiniSwitchContainer{
+    display:none;
+}
+
+@media (min-width:700px) and (max-width:1120px){
+    .InternalWrapper{
+        display:inline-block;
+        position:relative;
+    }
+    
+    .Heading{
+        display:none;
+    }
+    .HeadingSmall{
+        display:flex;
+        flex-wrap:wrap;
+        font-size:45px;
+        min-width: 450px;
+        top:-100px;
+    }
+    .Paragraph{
+        display:none;
+    }
+    .ParagraphSmall{
+        display:flex;
+        flex-wrap:wrap;
+        font-size: 20px;
+        min-width: 500px;
+        color:#757575;
+    }
+    .SwitchContainer{
+        max-height:600px;
+        padding-right: 5%;
+        display:inline-block;
+        position:relative;
+        min-width:400px;
+    }
+    .BgImage{
+        position:inherit;
+        width: 125%;
+        max-width:130%;
+        top:20px;
+    }
+    .MiniSwitchContainer{
+        display:none;
+    }
+}
+
+@media (max-width:700px){
+    .Heading{
+        display:none;
+    }
+    .HeadingSmall{
+        display:flex;
+        flex-wrap:wrap;
+        font-size:45px;
+        min-width: 450px;
+    }
+    .Paragraph{
+        display:none;
+    }
+    .ParagraphSmall{
+        display:flex;
+        flex-wrap:wrap;
+        font-size: 20px;
+        min-width: 500px;
+        color:#757575;
+    }
+    .SwitchContainer{
+        display:none;
+    }
+    .MiniSwitchContainer{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .TranscriptImageSm{
+        width:40%;
+        height:80%;
+    }
+    .ButtonFlex{
+        display:flex;
+        order:1;
+        min-width:500px;
+        width:100vw;
+        height:auto;
+        padding-left:25vw;
+        padding-right:25vw; 
+        position:relative;
+        background-color: #ffffff;
+        border-radius: 30px;
+        justify-content: flex-start;
+    }
+    .ButtonChildren1Sm{
+        flex:0 100%;
+        order:1;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #757575;
+        background-color: #ffffff;
+    }
+    
+    .ButtonChildren2Sm{
+        order:2;
+        flex:0 100%;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: 12%;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #757575;
+        background-color: #ffffff;
+    }
+    
+    .ButtonChildren3Sm{
+        order:3;
+        flex:0 100%;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #757575;
+        background-color: #ffffff;
+    }
+
+    .ButtonSelected1Sm{
+        flex:0 100%;
+        order:1;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #404040;
+        background-color: #d3d3d3;
+    }
+
+    .ButtonSelected2Sm{
+        order:2;
+        flex:0 100%;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: 12%;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #404040;
+        background-color: #d3d3d3;
+    }
+    
+    .ButtonSelected3Sm{
+        order:3;
+        flex:0 100%;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: 12%;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #404040;
+        background-color: #d3d3d3;
+    }
+    
+    .ButtonChildren1Sm:Hover{
+        flex:0 100%;
+        order:1;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #404040;
+        background-color: #a9a9a9;
+    }
+    
+    .ButtonChildren2Sm:Hover{
+        order:2;
+        flex:0 100%;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: 12%;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #404040;
+        background-color: #a9a9a9;
+    }
+    
+    .ButtonChildren3Sm:Hover{
+        order:3;
+        flex:0 100%;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #404040;
+        background-color: #a9a9a9;
+    }
+
+    .ImageCardFlex{
+        order:2;
+        padding-top: 20px;
+        display:flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        height:auto;
+    }
+
+    .TranscriptImageSm{
+        order:1;
+        width: 100%;
+    }
+
+    .CardSm{
+        order:2;
+        width:100%;
+    }
 }

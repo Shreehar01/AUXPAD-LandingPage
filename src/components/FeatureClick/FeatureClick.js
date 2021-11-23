@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
-import FeatureClickImg from './Feature Click.svg';
 
 const FeatureClick = () =>{
     return (

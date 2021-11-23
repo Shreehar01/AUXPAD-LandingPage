@@ -3,23 +3,28 @@
     order:1;
     flex-grow:1;
     flex-shrink:1;
-    flex-basis: 40%;
-    align-self: center;
 }
 
 .Heading{
-    font-size:60px;
+    font-size:45px;
     position:relative;
     top:-12px;
     word-spacing:5px;
 }
 
+.HeadingSmall{
+    display:none;
+}
+
 .Paragraph{
     display:flex;
     flex-wrap:wrap;
-    font-size: 25px;
+    font-size: 20px;
     color:#757575;
+}
 
+.ParagraphSmall{
+    display:none;
 }
 
 .Button{
@@ -49,62 +54,70 @@
 .Image{
     display:flex;
     position:relative;
-    left:-10px;
+    max-width:75%;
     order:2;
     flex-grow:1;
     flex-shrink:1;
     align-self: center;
 }
 
-@media (max-width:1050px){
+@media (max-width:1120px){
     .Text{
         display:flex;
         flex-direction:row;
         position:relative;
-        order:1;
+        top: 20px;
+        order:2;
         flex-grow:1;
         flex-shrink:1;
         flex-basis: 100%;
-        justify-content: center;
         flex-direction:column;
+        padding-bottom: 30px;
     }
     
-    .Heading{
+    .HeadingSmall{
         display:flex;
-        font-size:60px;
+        font-size:45px;
         position:relative;
-        justify-content: center;
         top:-12px;
         word-spacing:5px;
+        min-width: 600px;
+    }
+    
+    .ParagraphSmall{
+        display:flex;
+        flex-wrap:wrap;
+        font-size: 20px;
+        color:#757575;
+        min-width: 395px;
+    }
+
+    .Heading{
+        display:none;
     }
     
     .Paragraph{
-        display:flex;
-        flex-wrap:wrap;
-        font-size: 25px;
-        justify-content: center;
-        color:#757575;
-    
+        display:none;
     }
     
     .Button{
         position:relative;
-        left:10px;
-        width: 120px;
-        height: 50px;
+        left:-5px;
+        width: 100px;
+        height: 35px;
         display:flex;
         justify-content: center;
         color: #ffffff;
         background-color: #c22929;
-        text-align: center;
         border-radius: 26px;
         margin: 4px 2px;
         border-color:#c22929;
     }
     
     .Button:hover{
-        width: 120px;
-        height: 50px;
+        width: 100px;
+        left:-5px;
+        height: 35px;
         display:flex;
         justify-content: center;
         background-color: #ffffff;
@@ -117,10 +130,13 @@
     
     .Image{
         position:relative;
-        left:-10px;
-        order:2;
+        width: 150%;
+        height: auto;
+        max-width:150%;
+        padding-right: 5%;
+        order:1;
         flex-grow:1;
-        flex-shrink:1;
+        flex-shrink:0;
         align-self: center;
     }
     
