@@ -1,12 +1,25 @@
+.FlexContainer{
+    display:flex;
+    flex-direction: row;
+    width:100vw;
+} 
+
 .Text{
     position:relative;
+    max-width:70%;
+    min-width:50%;
+    width:50%;
+    padding-right:10vw;
     order:1;
     flex-grow:1;
     flex-shrink:1;
 }
 
 .Heading{
-    font-size:45px;
+    display:flex;
+    flex-wrap:nowrap;
+    font-size:55px;
+    font-weight: bolder;
     position:relative;
     top:-12px;
     word-spacing:5px;
@@ -18,7 +31,7 @@
 
 .Paragraph{
     display:flex;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
     font-size: 20px;
     color:#757575;
 }
@@ -29,14 +42,13 @@
 
 .Button{
     position:relative;
-    left:10px;
     width: 120px;
     height: 50px;
     color: #ffffff;
     background-color: #c22929;
     text-align: center;
     border-radius: 26px;
-    margin: 4px 2px;
+    margin: 4px 0px;
     border-color:#c22929;
 }
 
@@ -52,16 +64,21 @@
 }
 
 .Image{
-    display:flex;
     position:relative;
-    max-width:75%;
+    display:flex;
+    max-width:50%;
+    min-width:50%;
     order:2;
     flex-grow:1;
-    flex-shrink:1;
-    align-self: center;
+    flex-shrink:1;    
 }
 
-@media (max-width:1120px){
+@media (max-width:1100px){
+    .FlexContainer{
+        display:flex;
+        flex-direction: column;
+    }
+
     .Text{
         display:flex;
         flex-direction:row;
@@ -70,7 +87,6 @@
         order:2;
         flex-grow:1;
         flex-shrink:1;
-        flex-basis: 100%;
         flex-direction:column;
         padding-bottom: 30px;
     }
@@ -129,15 +145,14 @@
     }
     
     .Image{
+        left:0;
         position:relative;
-        width: 150%;
         height: auto;
         max-width:150%;
         padding-right: 5%;
         order:1;
         flex-grow:1;
-        flex-shrink:0;
-        align-self: center;
+        flex-shrink:1;
     }
     
 }

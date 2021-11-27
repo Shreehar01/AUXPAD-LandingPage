@@ -1,6 +1,7 @@
- .universal {
+  .universal {
     box-sizing: border-box;
     padding-left: 8%;
+    padding-right: 4%;
   }
   
   body {
@@ -11,7 +12,7 @@
   .nav {
     height: 50px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #fafaf9;
     position: relative;
     display:flex;
     flex-wrap:nowrap;
@@ -38,7 +39,7 @@
     float: right;
     min-width:20px;
     flex-shrink:0.5;
-    font-size: 16px;
+    font-size: 15px;
   }
   
   .nav > .nav-links > a {
@@ -62,28 +63,32 @@
     display: inline-flex;
     flex-shrink:1;
     min-width:5px;
-    padding: 15px 85px 13px 10px;
+    padding: 15px 8px 13px 10px;
   }
   
   .nav > .sign > a{
     text-decoration: none;
     min-width:5px;
-    padding-top:16px;
+    padding-top:14px;
     padding-right: 50px;
     color: #0B132A; 
   }
 
   .nav > .sign > a:hover{
-    
+    text-decoration: none;
+    min-width:5px;
+    padding-top:14px;
+    padding-right: 50px;
+    color: black; 
   }
 
   .nav > .sign > button{
     width: 120px;
     height: 50px;
-    background-color: #ffffff;
+    background-color: #fafaf9;
     color: #c22929;
     text-align: center;
-    border-radius: 26px;
+    border-radius: 2vh;
     margin: 4px 2px;
     border-color: #c22929;
   }
@@ -92,65 +97,156 @@
     width: 120px;
     height: 50px;
     background-color: #c22929;
-    color: white;
+    color: #fafaf9;
     text-align: center;
-    border-radius: 26px;
+    border-radius: 2vh;
     margin: 4px 2px;
     border:none;
   }
-
-  @media (max-width:1050px){
-    .nav > .nav-links{
-      display:none;
-    }
+  .bar {
+    display: none
+  }
+  .no-show{
+    display:none;
+  }
+  
+  @media (max-width:1050px) and (min-width:500px) {
     .nav > .sign{
       display:none;
     }
-  }
-  /*
-  @media (max-width:600px) {
     .nav > .nav-btn {
       display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
+      position: relative;
+      right: 5vw;
+      left:60vw;
+      top: 10px;
     }
     .nav > .nav-btn > label {
       display: inline-block;
+      position:relative;
       width: 50px;
       height: 50px;
+      color:black;
       padding: 13px;
     }
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: #1c1c1c;
     }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #eee;
-    }
+    
     .nav > .nav-links {
+      margin-top:10px;
+      z-index:2;
       position: absolute;
       display: block;
       width: 100%;
-      background-color: #333;
+      background-color: #fafaf9;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
       top: 50px;
       left: 0px;
+      min-width:600px;
     }
     .nav > .nav-links > a {
       display: block;
       width: 100%;
     }
+    .no-show{
+      font-size: 16px;
+      display: block;
+      width: 100%;
+      display: inline-flex;
+      padding: 30px 85px 13px 10px;
+      min-width:5px;
+      text-decoration: none;
+      color: #4F5665;
+    }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
     }
+    
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
+      height: calc(100vh - 360px);
       overflow-y: auto;
+      margin-bottom:10px;
+    }
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: #101010;
     }
   }
-*/
+  
+
+  @media (max-width:500px){
+    .nav > .sign{
+      display:none;
+    }
+    .nav > .nav-btn {
+      display: inline-block;
+      position: relative;
+      right: 5vw;
+      left:80vw;
+      top: 10px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      position:relative;
+      width: 50px;
+      height: 50px;
+      color:black;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    }
+    
+    .nav > .nav-links {
+      margin-top:10px;
+      z-index:2;
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #fafaf9;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+      min-width:600px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .no-show{
+      font-size: 16px;
+      display: block;
+      width: 100%;
+      display: inline-flex;
+      padding: 30px 85px 13px 10px;
+      min-width:5px;
+      text-decoration: none;
+      color: #4F5665;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 360px);
+      overflow-y: auto;
+      margin-bottom:10px;
+    }
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: #101010;
+    }
+  }

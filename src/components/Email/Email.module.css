@@ -31,23 +31,29 @@
 }
 
 .heading{
+    font-size: 45px;
     padding-bottom:1vw;
     background-color: #e5e5e5;
 }
 
 .para{
     padding-bottom:2vw;
+    font-size: 20px;
     background-color: #e5e5e5;
 }
 
+.parasm{
+    display:none;
+}
+
 .textBox{
-    width:22vw;
+    width:40vh;
     background-color: #e5e5e5;
+
 }
 
 .outerGroup{
     background-color: #e5e5e5;
     position: relative;
     font-size: 80%;
-    padding-top:2vw;
 }

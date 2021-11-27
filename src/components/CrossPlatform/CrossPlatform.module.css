@@ -34,11 +34,13 @@
 
 .ImgContainer{
     max-width:125%;
+    background-color: #757575;
     height:auto;
     width: 125%;
 }
 
 .Img{
+    background-color: #757575;
     max-width:100%;
     width: 100%;
 }
