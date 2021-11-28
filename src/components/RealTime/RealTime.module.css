@@ -266,9 +266,6 @@
     }
     
     .Heading{
-        display:none;
-    }
-    .HeadingSmall{
         display:flex;
         flex-wrap:wrap;
         font-size:45px;
@@ -276,9 +273,6 @@
         top:-100px;
     }
     .Paragraph{
-        display:none;
-    }
-    .ParagraphSmall{
         display:flex;
         flex-wrap:wrap;
         font-size: 20px;
@@ -317,18 +311,12 @@
         display:none;
     }
     .Heading{
-        display:none;
-    }
-    .HeadingSmall{
         display:flex;
         flex-wrap:wrap;
         font-size:45px;
         min-width: 450px;
     }
     .Paragraph{
-        display:none;
-    }
-    .ParagraphSmall{
         display:flex;
         flex-wrap:wrap;
         font-size: 20px;
