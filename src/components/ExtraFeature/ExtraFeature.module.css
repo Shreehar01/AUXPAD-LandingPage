@@ -119,7 +119,7 @@
     background-color: #ffffff;
 }
 
-@media (max-width:1120px){    
+@media (min-width: 500px) and (max-width:1120px){    
     .TextContainer{
         display:flex;
         flex-shrink: 1;
@@ -223,6 +223,124 @@
         order:2;
         position:inherit;
         max-width:80%;
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width:500px){    
+    .TextContainer{
+        display:flex;
+        flex-shrink: 1;
+        flex-direction:column;
+        position:relative;
+        top:-120px;
+        min-width: 600px;
+    }
+    
+    .Heading{
+        font-size: 50px;
+    }
+    
+    .TextHeading{
+        font-size:38px;
+    }
+
+    .TextPara{
+        font-size:24px;
+    }
+
+    .CardContainer{
+        display:flex;
+        flex-direction: column;
+        height:auto;
+        width:60vw;
+        max-width:100vw;
+        position:relative;
+        top:-100px;
+    }
+    
+    .Flex1{
+        display:flex;
+        flex-direction:column;
+        padding-top:2.5vh;
+        padding-right:1.5vw;
+        max-width:60vw;
+        height:auto;
+    }
+    
+    .FCard1{
+        max-width:60vw;
+        width:90vw;
+        min-width:600px;
+        height: auto;
+        padding:8vw 4vw 4vw 12vw;
+        background-color: #ffffff;
+        border-radius:25px;
+    }
+    
+    .FCard2{
+        max-width:60vw;
+        width:90vw;
+        height: auto;
+        min-width:600px;
+        position:relative;
+        top:3vh;
+        padding:8vw 4vw 4vw 12vw;
+        height:auto;
+        background-color: #ffffff;
+        border-radius:25px;
+    }
+    
+    
+    .Flex2{
+        display:flex;
+        flex-direction:column;
+        padding-top:6vh;
+        padding-right:1.5vw;
+        max-width:60vw;
+        height:auto;
+    }
+    
+    .SCard1{
+        position:relative;
+        left:-2vh;
+        max-width:60vw;
+        width:90vw;
+        min-width:600px;
+        height: auto;
+        padding:8vw 12vw 4vw 12vw;
+        background-color: #ffffff;
+        border-radius:25px;
+    }
+    
+    .ImgHeader{
+        position:inherit;
+        max-width:100%;
+    }
+    
+    .SCard2{
+        display:flex;
+        max-width:65vw;
+        left:-2vh;
+        height: auto;
+        position:relative;
+        flex-direction: column;
+        top:3vh;
+        min-width:600px;
+        padding:8vw 4vw 4vw 12vw;
+        height:auto;
+        background-color: #ffffff;
+        border-radius:25px;
+    }
+    
+    .FlexLastText{
+        order:1;
+        background-color: #ffffff;
+        width:100%;
+    }
+    
+    .FlexLastImg{
+        order:2;
         background-color: #ffffff;
     }
 }

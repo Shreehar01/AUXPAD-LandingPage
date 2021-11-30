@@ -24,7 +24,7 @@
   
   .nav > .nav-header > .nav-title {
     display: inline-flex;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 700;
     color: #1c1c1c;
     padding: 10px 85px 10px 10px;
@@ -149,13 +149,15 @@
     .nav > .nav-links > a {
       display: block;
       width: 100%;
+      font-size:20px;
+      padding:12px;
     }
     .no-show{
-      font-size: 16px;
+      font-size: 20px;
       display: block;
       width: 100%;
       display: inline-flex;
-      padding: 30px 85px 13px 10px;
+      padding: 12px;
       min-width:5px;
       text-decoration: none;
       color: #4F5665;
@@ -165,14 +167,18 @@
     }
     
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 360px);
-      overflow-y: auto;
+      height: calc(100vh - 380px);
+      width:98vw;
+      overflow-y: hidden;
       margin-bottom:10px;
+      margin-top:25px;
     }
     .bar {
+      position:relative;
+      left:-20px;
       display: block;
-      width: 25px;
-      height: 3px;
+      width: 30px;
+      height: 5px;
       margin: 5px auto;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
@@ -182,6 +188,14 @@
   
 
   @media (max-width:500px){
+    .nav > .nav-header > .nav-title {
+      display: inline-flex;
+      font-size: 50px;
+      font-weight: 700;
+      color: #1c1c1c;
+      padding: 10px 85px 10px 10px;
+    }
+        
     .nav > .sign{
       display:none;
     }
@@ -190,7 +204,7 @@
       position: relative;
       right: 5vw;
       left:80vw;
-      top: 10px;
+      top: 12.5px;
     }
     .nav > .nav-btn > label {
       display: inline-block;
@@ -212,21 +226,25 @@
       background-color: #fafaf9;
       height: 0px;
       transition: all 0.3s ease-in;
-      overflow-y: hidden;
+      overflow-y:auto;
       top: 50px;
       left: 0px;
       min-width:600px;
     }
+
     .nav > .nav-links > a {
       display: block;
       width: 100%;
+      font-size: 25px;
+      padding:10px;
     }
     .no-show{
       font-size: 16px;
       display: block;
       width: 100%;
       display: inline-flex;
-      padding: 30px 85px 13px 10px;
+      font-size: 25px;
+      padding:10px;
       min-width:5px;
       text-decoration: none;
       color: #4F5665;
@@ -236,14 +254,19 @@
     }
     
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 360px);
-      overflow-y: auto;
+      height: calc(100vh - 385px);
+      width:100vw;
+      overflow-y: hidden;
       margin-bottom:10px;
+      margin-top:34px;
+      margin-left:1px;
     }
     .bar {
+      position:relative;
+      left:-30px;
       display: block;
-      width: 25px;
-      height: 3px;
+      width: 30px;
+      height: 5px;
       margin: 5px auto;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;

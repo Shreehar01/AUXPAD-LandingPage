@@ -5,6 +5,7 @@ import Rectangle from './Rectangle.svg';
 import TranscriptImage from './TranscriptImage.svg';
 import RectangleBackground from './RectangleBackground.svg';
 import CardComponent  from './Components/CardComponent.js';
+import TempImg from './TempImg.png';
 
 const texts = {
     "inclass" : ["Zoned out during a lecture?", "And forgot to take notes? Don’t worry, auxpad has the entire transcript + audio ready for you to review"],
@@ -43,7 +44,7 @@ const FeatureAudio = () =>{
                     <div className={Classes.SwitchContainer}>    
                         <img className={Classes.BgImage} src={Rectangle} />
                         <img className={Classes.RectangleBackground} src={RectangleBackground} />
-                        <img className={Classes.TranscriptImage} src={value == "inclass" ? TranscriptImage : value == "meeting"? null: null} />
+                        <img className={Classes.TranscriptImage} src={value == "inclass" ? TranscriptImage : value == "meeting"? TempImg: TranscriptImage} />
                         <button className={value == "inclass" ? Classes.ButtonSelected1 : Classes.ButtonChildren1} onClick = {() => setValue("inclass")}>in class</button>
                         <button className={value == "meeting" ? Classes.ButtonSelected2 : Classes.ButtonChildren2} onClick = {() => setValue("meeting")}>meeting</button>
                         <button className={value == "interview" ? Classes.ButtonSelected3 : Classes.ButtonChildren3} onClick = {() => setValue("interview")}>interview</button>

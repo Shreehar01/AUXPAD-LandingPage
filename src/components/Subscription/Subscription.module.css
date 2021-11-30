@@ -34,6 +34,10 @@
     flex-wrap:wrap;
 }
 
+.Horizontal{
+    color:#ffffff;
+}
+
 .Review1{
     margin-right:10vw;
     margin-bottom:5vh;
@@ -112,7 +116,7 @@
 }
 
 
-@media (max-width: 600px){
+@media (min-width: 500px) and (max-width: 600px){
     .InternalWrapper{
         position:relative;
         top:20px;
@@ -126,5 +130,96 @@
         font-size: 20px;
         color:#757575;
         min-width:500px;
+    }
+}
+
+
+@media (max-width: 500px){
+    .InternalWrapper{
+        position:relative;
+        top:20px;
+    }
+    .Heading{
+        display:flex;
+        flex-wrap:wrap;
+        font-size:50px;
+        padding-bottom:15px;
+        min-width:600px;
+    }
+    .Paragraph{
+        display:none;
+    }
+    .ParagraphSm{
+        display:flex;
+        flex-wrap:wrap;
+        font-size: 28px;
+        color:#757575;
+        min-width:600px;
+    }
+    .Review1{
+        margin-right:10vw;
+        margin-bottom:5vh;
+        padding:30px;
+        padding-left:40px;
+        padding-right:40px;
+        flex:0 0 40%;
+        height: 400px;
+        background-color: #ffffff;
+        max-width:40%;
+        min-width:600px;
+        border-radius: 30px;
+        border:5px solid #c22929;
+    }
+    
+    .Review1Text{
+        color:#505050;
+        background-color: #ffffff;
+        font-size:25px;
+    }
+    
+    .Review1Name{
+        color:#505050;
+        background-color: #ffffff;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .Review1College{
+        color:#505050;
+        background-color: #ffffff;
+        font-size:25px;
+    }
+
+    .Review2{
+        margin-right:10vw;
+        margin-bottom:5vh;
+        padding:30px;
+        padding-left:40px;
+        padding-right:40px;
+        flex:0 0 40%;
+        height: 400px;
+        max-width:40%;
+        min-width:600px;
+        border-radius: 30px;
+        background-color: #858585;;
+    }
+    
+    .Review2Text{
+        background-color:#858585;
+        color: #ffffff;
+        font-size:25px;
+    }
+    
+    .Review2Name{
+        color:#ffeeee;
+        background-color:#858585;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .Review2College{
+        color:#ffeeee;
+        background-color: #858585;
+        font-size:25px;
     }
 }

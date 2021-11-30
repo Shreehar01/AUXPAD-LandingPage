@@ -306,9 +306,12 @@
     }
 }
 
-@media (max-width:825px){
+@media (min-width:500px) and (max-width:825px){
     .Logo{
         display:none;
+    }
+    .TextContainer{
+        padding-left: 0;
     }
     .Heading{
         display:flex;
@@ -339,6 +342,248 @@
         display:flex;
         order:1;
         min-width:500px;
+        width:100vw;
+        height:auto;
+        padding-left:25vw;
+        padding-right:25vw; 
+        position:relative;
+        background-color: #ffffff;
+        border-radius: 30px;
+        justify-content: flex-start;
+    }
+    .ButtonChildren1Sm{
+        padding-left:2vw;
+        padding-right:2vw;
+        flex:0 100%;
+        order:1;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #757575;
+        background-color: #ffffff;
+    }
+    
+    .ButtonChildren2Sm{
+        padding-left:2vw;
+        padding-right:2vw;
+        order:2;
+        flex:0 100%;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: 12%;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #757575;
+        background-color: #ffffff;
+    }
+    
+    .ButtonChildren3Sm{
+        padding-left:2vw;
+        padding-right:2vw;
+        order:3;
+        flex:0 100%;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #757575;
+        background-color: #ffffff;
+    }
+
+    .ButtonSelected1Sm{
+        padding-left:2vw;
+        padding-right:2vw;
+        flex:0 100%;
+        order:1;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #000000;
+        font-weight: bold;
+        background-color: #d3d3d3;
+    }
+
+    .ButtonSelected2Sm{
+        padding-left:2vw;
+        padding-right:2vw;
+        order:2;
+        flex:0 100%;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: 12%;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #000000;
+        font-weight: bold;
+        background-color: #d3d3d3;
+    }
+    
+    .ButtonSelected3Sm{
+        padding-left:2vw;
+        padding-right:2vw;
+        order:3;
+        flex:0 100%;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: 12%;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #000000;
+        font-weight: bold;
+        background-color: #d3d3d3;
+    }
+    
+    .ButtonChildren1Sm:Hover{
+        padding-left:2vw;
+        padding-right:2vw;
+        flex:0 100%;
+        order:1;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #404040;
+        background-color: #a9a9a9;
+    }
+    
+    .ButtonChildren2Sm:Hover{
+        padding-left:2vw;
+        padding-right:2vw;
+        order:2;
+        flex:0 100%;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: 12%;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #404040;
+        background-color: #a9a9a9;
+    }
+    
+    .ButtonChildren3Sm:Hover{
+        padding-left:2vw;
+        padding-right:2vw;
+        order:3;
+        flex:0 100%;
+        margin-left:80%;
+        margin-right:80%;
+        position:relative;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 26px;
+        margin: 4px 2px;
+        border:none;
+        color: #404040;
+        background-color: #a9a9a9;
+    }
+
+    .ImageCardFlex{
+        order:2;
+        padding-top: 20px;
+        display:flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        height:auto;
+    }
+
+    .TranscriptImageSm{
+        order:1;
+        margin-left:15%;
+        width: 70%;
+    }
+
+    .CardSm{
+        order:2;
+        margin-left:15%;
+        width: 70%;
+    }
+}
+
+
+@media (max-width:500px){
+    .Logo{
+        display:none;
+    }
+    .TextContainer{
+        padding-left: 0;
+    }
+    .Heading{
+        display:flex;
+        flex-wrap:wrap;
+        font-size:47px;
+        min-width: 600px;
+    }
+    .Paragraph{
+        display:flex;
+        flex-wrap:wrap;
+        font-size: 28px;
+        min-width: 600px;
+        color:#757575;
+    }
+    .SwitchContainer{
+        display:none;
+    }
+    .MiniSwitchContainer{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .TranscriptImageSm{
+        width:40%;
+        height:80%;
+    }
+    .ButtonFlex{
+        display:flex;
+        order:1;
+        min-width:600px;
         width:100vw;
         height:auto;
         padding-left:25vw;

@@ -23,7 +23,7 @@ const Subscription = () => {
                     <div className={Classes.Review2}>
                         <img src={Quote} className={Classes.Icon2} />
                         <p className={Classes.Review2Text}>AUXPAD is exactly what I’ve needed for the longest time! Once you’ve taken notes with AUXPAD, you can’t go back!</p>
-                        <hr />
+                        <hr className={Classes.Horizontal} />
                         <p className={Classes.Review2Name}>David Munechika</p>
                         <p className={Classes.Review2College}>Student at Georgica Tech</p>
                     </div>
@@ -37,7 +37,7 @@ const Subscription = () => {
                     <div className={Classes.Review2}>
                         <img src={Quote} className={Classes.Icon2} />
                         <p className={Classes.Review2Text}>AUXPAD is exactly what I’ve needed for the longest time! Once you’ve taken notes with AUXPAD, you can’t go back!</p>
-                        <hr />
+                        <hr className={Classes.Horizontal} />
                         <p className={Classes.Review2Name}>David Munechika</p>
                         <p className={Classes.Review2College}>Student at Georgica Tech</p>
                     </div>

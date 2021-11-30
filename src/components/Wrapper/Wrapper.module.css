@@ -21,10 +21,8 @@
     min-width: 100%;
     width: 100%; 
     align-content: space-around;
-    background-color: #e5e5e5;
 } 
-
-
+/*
 @media (max-width: 620px){
     .flexContainer2{
         margin-top:120px;
@@ -34,6 +32,7 @@
         max-height:200px;
         min-width: 100%;
         width: 100%; 
-        background-color: #e5e5e5;
     }    
 }
+*/
+/*background-color: #e5e5e5;*/

@@ -25,6 +25,7 @@ const NavBar = () => {
         <a onClick = {() => {document.getElementById("Contact").scrollIntoView({behavior: 'smooth'})}}>Contact</a>
         <a onClick = {() => {document.getElementById("Contact").scrollIntoView({behavior: 'smooth'})}}>About Us</a>
         <div>
+          <hr />
           <a class = "no-show" href="https://app.auxpad.com/login">Sign In</a>
           <a class = "no-show" href="https://app.auxpad.com/register">Sign Up</a>
         </div>

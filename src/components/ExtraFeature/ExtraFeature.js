@@ -39,7 +39,7 @@ const ExtraFeature = () => {
                                 <h5 className={Classes.TextHeading}>Audiofile Upload</h5>
                                 <p className={Classes.TextPara}>Take notes on lectures with <br /> ease, no need to jot down all <br /> the paraphrase when you can <br /> click to paste</p>
                             </div>
-                            <div ClassName={Classes.FlexLastImage}><img src={Frame} /></div>
+                            <div className={Classes.FlexLastImg}><img src={Frame} /></div>
                         </div>
                     </div>
                 </div>
